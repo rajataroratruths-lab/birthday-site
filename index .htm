@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday ☠️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+    }
+
+    .bg1,
+    .bg2 {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      animation: pulse 4s infinite alternate;
+    }
+
+    .bg1 {
+      width: 350px;
+      height: 350px;
+      background: rgba(255, 0, 128, 0.35);
+      top: -80px;
+      left: -80px;
+    }
+
+    .bg2 {
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 170, 255, 0.25);
+      bottom: -100px;
+      right: -100px;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+
+    .card {
+      width: 90%;
+      max-width: 800px;
+      padding: 50px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 40px rgba(255,255,255,0.08);
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .small-text {
+      color: #ff4da6;
+      letter-spacing: 8px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+
+    h1 span {
+      color: #ff2e88;
+    }
+
+    .subtitle {
+      color: #d0d0d0;
+      font-size: 24px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .message-box {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 35px;
+      text-align: left;
+      line-height: 2;
+      color: #dddddd;
+      font-size: 18px;
+    }
+
+    .message-box p {
+      margin-bottom: 18px;
+    }
+
+    .signature {
+      color: #ff4da6;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 18px 40px;
+      border: none;
+      border-radius: 18px;
+      background: #ff2e88;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 46, 136, 0.5);
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      background: #ff0f78;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: gray;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 45px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .message-box {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+
+  <div class="card">
+    <div class="small-text">Special Day</div>
+
+    <h1>Happy <span>Birthday</span></h1>
+
+    <div class="subtitle">
+      Another year older... but somehow still surviving the chaos.<br>
+      Respect ☠️
+    </div>
+
+    <div class="message-box">
+      <p>Today is your day.</p>
+
+      <p>
+        So forget stress. Forget fake people. Forget every bad moment.
+      </p>
+
+      <p>
+        Just enjoy today like the main character you are.
+      </p>
+
+      <p>
+        Keep winning. Keep growing. And never lose that crazy energy.
+      </p>
+
+      <div class="signature">
+        — From Someone Who Actually Remembers Your Birthday 😌
+      </div>
+    </div>
+
+    <button onclick="showMessage()">
+      Open Secret Message
+    </button>
+
+    <div class="footer">
+      Made with chaos, caffeine, and last-minute panic.
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Now go eat cake before someone else does ☠️🎂");
+    }
+  </script>
+
+</body>
+</html>
